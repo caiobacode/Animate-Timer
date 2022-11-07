@@ -3,37 +3,38 @@ import React, { useEffect, useState } from 'react';
 function Timer() {
   const [totalTimeinMinutes, setTotalTimeInMinutes] = useState(15);
   const [totalTimeinSeconds, setTotalTimeInSeconds] = useState(totalTimeinMinutes * 60);
-  const [wasClicked, setWasClicked] = useState(false);
+  const [wasStarted, setWasStarted] = useState(false);
   const seconds = totalTimeinSeconds % 60;
 
   const handleChangeSeconds = ({ target }) => {
     setTotalTimeInSeconds((totalTimeinMinutes * 60) + Number(target.value));
   };
+
   const handleChangeMinutes = ({ target }) => {
+    if (target.value > 99) return;
     setTotalTimeInMinutes(Number(target.value));
     setTotalTimeInSeconds(Number(target.value) * 60);
   };
+
   useEffect(() => {
-    if (wasClicked) {
-      console.log(totalTimeinSeconds);
-      if (totalTimeinSeconds === 0) {
-        console.log('cabo');
-      } else {
-        setTimeout(() => {
-          if (Number(seconds.toString().padStart(2, '0')) === 0) {
-            setTotalTimeInMinutes(totalTimeinMinutes => totalTimeinMinutes - 1);
-          }
-          setTotalTimeInSeconds(totalTimeinSeconds - 1);
-        }, 1000);
-      }
+    if (!wasStarted) return; 
+    console.log(totalTimeinSeconds);
+    if (totalTimeinSeconds === 0) {
+      console.log('Time is over');
+      return;
     }
-  }, [totalTimeinSeconds, wasClicked, seconds]);
+    setTimeout(() => {
+      setTotalTimeInSeconds(totalTimeinSeconds - 1);
+      if (seconds !== 0) return;
+      setTotalTimeInMinutes(totalTimeinMinutes - 1);
+    }, 1000);
+  }, [totalTimeinSeconds, totalTimeinMinutes, wasStarted, seconds]);
 
   return (
     <div>
-      <button type="button" onClick={() => setWasClicked(true)}>Start</button>
+      <button type="button" onClick={() => setWasStarted(true)}>Start</button>
       {
-        wasClicked ? (
+        wasStarted ? (
           <div>
             <span>{totalTimeinMinutes.toString().padStart(2, '0')}</span>
             <span>:</span>
@@ -52,6 +53,9 @@ function Timer() {
             value={seconds.toString().padStart(2, '0')}></input> 
           </div>)
       }
+      <button
+        type="buttun"
+        onClick={() => setWasStarted(false)}>Stop</button>
     </div>
   );
 }

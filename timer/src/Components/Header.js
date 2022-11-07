@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import linkedin from '../Media/linkedin.png';
 import github from '../Media/github.png';
 import '../App.css';
