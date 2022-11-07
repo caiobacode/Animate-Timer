@@ -21,7 +21,7 @@ function Timer() {
     if (!wasStarted) return; 
     console.log(totalTimeinSeconds);
     if (totalTimeinSeconds === 0) {
-      console.log('Time is over');
+      window.alert('Time is over');
       return;
     }
     setTimeout(() => {

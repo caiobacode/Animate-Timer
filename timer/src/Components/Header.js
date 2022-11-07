@@ -1,6 +1,6 @@
 import React from 'react';
 import linkedin from '../Media/linkedin.png';
-import github from '../Media/github.png';
+import github from '../Media/github-purple.png';
 import '../App.css';
 
 function Header() {
@@ -11,7 +11,7 @@ function Header() {
         <h4 className="class">Turma 24 B</h4>
       </div>
       <div className="title-div">
-        <h1 className="title">Minecraft Timer</h1>
+        <h1 className="title">Minetimer</h1>
       </div>
       <div className="social-links">
         <img 
