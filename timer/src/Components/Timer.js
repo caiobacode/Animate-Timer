@@ -21,7 +21,6 @@ function Timer() {
       } else {
         setTimeout(() => {
           if (Number(seconds.toString().padStart(2, '0')) === 0) {
-            console.log('ovotz');
             setTotalTimeInMinutes(totalTimeinMinutes => totalTimeinMinutes - 1);
           }
           setTotalTimeInSeconds(totalTimeinSeconds - 1);
