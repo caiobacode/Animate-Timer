@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../App.css';
 
 function Timer() {
   const [totalTimeinMinutes, setTotalTimeInMinutes] = useState(15);
@@ -31,7 +32,8 @@ function Timer() {
   }, [totalTimeinSeconds, totalTimeinMinutes, wasStarted, seconds]);
 
   return (
-    <div>
+    <div className="main-div">
+      <div className="timer">
       <button type="button" onClick={() => setWasStarted(true)}>Start</button>
       {
         wasStarted ? (
@@ -56,6 +58,7 @@ function Timer() {
       <button
         type="buttun"
         onClick={() => setWasStarted(false)}>Stop</button>
+      </div>
     </div>
   );
 }

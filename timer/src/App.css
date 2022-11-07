@@ -1,9 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/* HEADER */
+
+.title {
+  align-items: center;
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Bungee', cursive;
 }
 
-.linkedin-btn {
+.title-div {
+  background-color: aqua;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Bungee', cursive;
+}
+
+.header {
+  background-color: aquamarine;
+  height: 150px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-links {
+  height: 100px;
+  width: 120px;
+  align-items: center;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+
+.github {
+  width: 50px;
+}
+
+.linkedin {
+  width: 50px;
+}
+
+.name-and-class {
+  height: 100px;
+  width: 120px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
   border-radius: 10px;
   padding: 0px;
   margin: 0px;
+}
+
+.class {
+  border-radius: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*-------*/
+
+/* TIMER */
+
+.main-div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.timer {
+  margin-top: 80px;
+  width: 30%;
+  height: 350px;
+  background-color: blue;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
 }
