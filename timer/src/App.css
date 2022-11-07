@@ -1,30 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 /* HEADER */
 
 .title {
   align-items: center;
-  background-color: green;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   font-family: 'Bungee', cursive;
-}
-
-.title-div {
-  background-color: aqua;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-family: 'Bungee', cursive;
+  font-size: 3em;
 }
 
 .header {
-  background-color: aquamarine;
+  background-image: url("./Media/terra.jpg");
+  background-position: 10px;
   height: 150px;
   align-items: center;
   display: flex;
@@ -84,12 +76,109 @@
 
 .timer {
   margin-top: 80px;
-  width: 30%;
+  width: 25%;
   height: 350px;
-  background-color: blue;
+  border-radius: 15px;
+  background: linear-gradient(68.15deg, #625750 16.62%,#3b3a30 85.61%);
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.start-btn {
+  background-color: #7CBB00;
+  border-radius: 15px;
+  width: 150px;
+  height: 70px;
+  font-family: 'Bungee', cursive;
+  font-size: 25px;
+}
+
+.finish-btn {
+  background-color: #E50914;
+  font-family: 'Bungee', cursive;
+  font-size: 25px;
+  border-radius: 15px;
+  width: 150px;
+  height: 70px;
+}
+
+.start-inputs {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   
+}
+
+.minutes-input {
+  border: none;
+  font-family: 'Anton', sans-serif;
+  padding-left: 15px;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 15px;
+  width: 90px;
+  height: 115px;
+  font-size: 80px;
+}
+
+.two-points {
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 20px;
+  width: 20px;
+  height: 100px;
+  font-size: 80px;
+}
+
+.seconds-input {
+  border: none;
+  font-family: 'Anton', sans-serif;
+  padding-left: 15px;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 15px;
+  width: 90px;
+  height: 115px;
+  font-size: 80px;
+}
+
+.running-inputs {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.minutes-started {
+  font-family: 'Anton', sans-serif;
+  padding-bottom: 35px;
+  padding-left: 15px;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 15px;
+  width: 90px;
+  height: 80px;
+  font-size: 80px;
+}
+
+.two-points-started {
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 20px;
+  width: 20px;
+  height: 100px;
+  font-size: 80px;
+}
+
+.seconds-started {
+  font-family: 'Anton', sans-serif;
+  padding-bottom: 35px;
+  padding-left: 15px;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 15px;
+  width: 90px;
+  height: 80px;
+  font-size: 80px;
 }
