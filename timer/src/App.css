@@ -83,7 +83,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 62px;
 }
 
 .timer {
@@ -148,6 +147,7 @@
   margin-bottom: 20px;
   width: 20px;
   height: 100px;
+  -webkit-text-stroke: 1px white;
   font-size: 80px;
 }
 
@@ -194,6 +194,7 @@
   font-family: 'Anton', sans-serif;
   margin-bottom: 20px;
   width: 20px;
+  -webkit-text-stroke: 1px white;
   height: 100px;
   font-size: 80px;
 }
@@ -211,6 +212,14 @@
   width: 90px;
   height: 80px;
   font-size: 80px;
+}
+
+.time-is-over {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  color: #d5e1df;
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); 
+  filter: drop-shadow(0px 0px 6px rgba(0 0 0 / 90%));
 }
 
 /*-----*/

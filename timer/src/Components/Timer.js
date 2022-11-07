@@ -5,6 +5,7 @@ function Timer() {
   const [totalTimeinMinutes, setTotalTimeInMinutes] = useState(15);
   const [totalTimeinSeconds, setTotalTimeInSeconds] = useState(totalTimeinMinutes * 60);
   const [wasStarted, setWasStarted] = useState(false);
+  const [timeIsOver, setTimeIsOver] = useState(false);
   const seconds = totalTimeinSeconds % 60;
 
   const handleChangeSeconds = ({ target }) => {
@@ -17,11 +18,16 @@ function Timer() {
     setTotalTimeInSeconds(Number(target.value) * 60);
   };
 
+  const handleStop = () => {
+    setTimeIsOver(false);
+    setWasStarted(false);
+  };
+
   useEffect(() => {
     if (!wasStarted) return; 
     console.log(totalTimeinSeconds);
     if (totalTimeinSeconds === 0) {
-      window.alert('Time is over');
+      setTimeIsOver(true);
       return;
     }
     setTimeout(() => {
@@ -69,8 +75,11 @@ function Timer() {
         disabled={!wasStarted}
         className="finish-btn"
         type="buttun"
-        onClick={() => setWasStarted(false)}>Stop</button>
+        onClick={handleStop}>Stop</button>
       </div>
+      {
+        timeIsOver && <h2 className="time-is-over">Time Is Over</h2>
+      }
     </div>
   );
 }
