@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import Timer from './Components/Timer';
+import Footer from './Components/Footer';
 import mine from './Media/minecraft.mp4';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       </video>  
       <Header />
       <Timer />
+      <Footer />
     </div>
   );
 }
