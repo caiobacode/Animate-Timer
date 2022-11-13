@@ -1,8 +1,12 @@
 MineTimer!
 
-Consists in a simple timer
+Consists in a simple timer.
 
-Developed in React/Javascript
+Developed in React/Javascript.
+
+If you wanna see the aplication you can open the app in this link minecraft-timer.vercel.app
+
+
 
 -------------------------
 
