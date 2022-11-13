@@ -4,7 +4,7 @@ Consists in a simple timer.
 
 Developed in React/Javascript.
 
-If you wanna see the aplication you can open the link bellow the "Above" area.
+If you wanna see the aplication you can open the link bellow the "About" area.
 
 Functionalities:
 -------------------------
