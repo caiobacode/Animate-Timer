@@ -11,7 +11,7 @@ Functionalities:
 
 Linkedin icon:  Click to open a new window in my linkedin profile.
 
-Github ícone:  Click to open a new window in my github profile.
+Github icon:  Click to open a new window in my github profile.
 
 Minutes Input: You can choose the minutes of the timer - You can only choose numbers between 0 and 99
 
