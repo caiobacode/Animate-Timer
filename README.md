@@ -4,7 +4,7 @@ Consists in a simple timer.
 
 Developed in React/Javascript.
 
-If you wanna see the aplication you can open the app in this link minecraft-timer.vercel.app
+If you wanna see the aplication you can open the app in this link https://minecraft-timer.vercel.app
 
 
 
