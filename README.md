@@ -1,6 +1,7 @@
 MineTimer!
 
 Consists in a simple timer
+
 Developed in React/Javascript
 
 -------------------------
