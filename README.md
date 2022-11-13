@@ -4,13 +4,10 @@ Consists in a simple timer.
 
 Developed in React/Javascript.
 
-If you wanna see the aplication you can open the app in this link https://minecraft-timer.vercel.app
-
-
-
--------------------------
+If you wanna see the aplication you can open the link bellow the description.
 
 Functionalities:
+-------------------------
 
 Linkedin icon:  Click to open a new window in my linkedin profile.
 
