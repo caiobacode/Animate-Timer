@@ -1,20 +1,22 @@
 MineTimer!
 
-Consiste em um timer simples
-Desenvolvido em React/Javascript
+Consists in a simple timer.
 
+Developed in React/Javascript.
+
+If you wanna see the aplication you can open the link bellow the "About" area.
+
+Functionalities:
 -------------------------
 
-Funcionalidades:
+Linkedin icon:  Click to open a new window in my linkedin profile.
 
-ícone Linkedin:  Ao clicar abre uma nova guia com o meu linkedin aberto.
+Github icon:  Click to open a new window in my github profile.
 
-ícone Github: Ao clicar abre uma nova guia com o meu github aberto.
+Minutes Input: You can choose the minutes of the timer - You can only choose numbers between 0 and 99
 
-Input Minutos: Te possibilita a escolher os minutos que serão contados no timer - Só podem ser selecionados números de 0 a 99.
+Seconds Input: You can choose the seconds of the timer - You can only choose numbers between 0 and 59
 
-Input Segundos: Te possibilita a escolher os segundos que serão contados no timer - Só podem ser selecionados números de 0 a 59.
+Start button: Start the timer and disable stop button
 
-Botão Start: Inicia o timer e habilita o botão Stop.
-
-Botão Stop: Para o timer e habilita o botão Start - A contagem tem um delay de 1 segundo até parar.
+Stop button: Stop the timer and disable start buttont
