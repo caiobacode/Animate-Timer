@@ -1,12 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
+import { Howl, Howler } from 'howler';
+import steveSong from '../Media/steveSong.mp3';
 
 function Timer() {
   const [totalTimeinMinutes, setTotalTimeInMinutes] = useState(15);
   const [totalTimeinSeconds, setTotalTimeInSeconds] = useState(totalTimeinMinutes * 60);
   const [wasStarted, setWasStarted] = useState(false);
   const [timeIsOver, setTimeIsOver] = useState(false);
+  const [firstStart, setFirstStart] = useState(false);
   const seconds = totalTimeinSeconds % 60;
+
+  Howler.volume(0.4);
+  const handleStart = () => {
+    const PlaySong = (src) => {
+      const sound = new Howl({
+        src,
+      });
+      sound.play();
+    };
+    if (!firstStart) {
+      PlaySong(steveSong);
+      console.log('toquei');
+    }
+    setWasStarted(true);
+    setFirstStart(true);
+  };
 
   const handleChangeSeconds = ({ target }) => {
     setTotalTimeInSeconds((totalTimeinMinutes * 60) + Number(target.value));
@@ -44,7 +63,7 @@ function Timer() {
         disabled={wasStarted}
         className="start-btn" 
         type="button" 
-        onClick={() => setWasStarted(true)}>Start</button>
+        onClick={handleStart}>Start</button>
       {
         wasStarted ? (
           <div className="running-inputs">
